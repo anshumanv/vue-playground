@@ -325,7 +325,7 @@ storiesOf('Search Components/DataSearch', module)
 
   .add('with iconPosition', () => ({
     components: { BaseDataSearch },
-    template: '<base-data-search :subProps="{ iconPosition: \'right\', showFilter: false }"/>',
+    template: '<base-data-search :subProps="{ iconPosition: select(\'iconPosition\', {left: \'left\' ,right: \'right\'} ,\'right\'), showFilter: false }"/>',
   }))
   .add('with defaultSelected', () => ({
     components: { BaseDataSearch },
